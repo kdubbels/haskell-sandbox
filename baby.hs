@@ -8,4 +8,14 @@ doubleSmallNumber x = if x > 100
 
 conanO'Brien = "It's a-me, Conan O'Brien!"
 
-fizzBuzz xs = [ if x `mod` 3 == 0 then "FIZZ!" else if x `mod` 5 == 0 then "BUZZ!" else show x | x <- xs]
+removeNonUppercase :: [Char] -> [Char]  
+removeNonUppercase st = [ c | c <- st, c `elem` ['A'..'Z']] 
+
+addThree :: Int -> Int -> Int -> Int  
+addThree x y z = x + y + z  
+
+factorial :: Integer -> Integer  
+factorial n = product [1..n] 
+
+circumference :: Float -> Float  
+circumference r = 2 * pi * r 
